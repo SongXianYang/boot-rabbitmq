@@ -1,0 +1,11 @@
+server:
+  port: 6666
+spring:
+  #项目起个名称，默认是项目名
+  application:
+    name: boot-rabbitmq
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest

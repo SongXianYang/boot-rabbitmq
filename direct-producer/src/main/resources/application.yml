@@ -1,0 +1,24 @@
+server:
+  port: 6660
+spring:
+#��Ŀ������ƣ�Ĭ������Ŀ��
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+
+#����������
+mq:
+  config:
+    exchange: log.direct
+
+#info��������
+    queue:
+      info:
+#info·�ɼ�����
+        routing:
+          key: lon.info.routing.key
+      error:
+        routing:
+          key: lon.error.routing.key

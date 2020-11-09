@@ -1,0 +1,12 @@
+server:
+  port: 6660
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+#交换器名称
+mq:
+  config:
+    exchange: order.fanout
